@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLE CALCULATOR</title>
+
+
+
+    <script>
+        function result() {
+            var a1, b1, c1, a2, b2, c2, x, y, b1c2, b2c1, a1b2, a2b1, c1a2, c2a1, s1, s2, s3;
+            a1 = Number(document.getElementById("a1").value);
+            b1 = Number(document.getElementById("b1").value);
+            c1 = Number(document.getElementById("c1").value);
+            a2 = Number(document.getElementById("a2").value);
+            b2 = Number(document.getElementById("b2").value);
+            c2 = Number(document.getElementById("c2").value);
+            b1c2 = b1 * c2;
+            b2c1 = b2 * c1;
+            a1b2 = a1 * b2;
+            a2b1 = a2 * b1;
+            c1a2 = c1 * a2;
+            c2a1 = c2 * a1;
+            s1 = b1c2 - b2c1;
+            s2 = a1b2 - a2b1;
+            s3 = c1a2 - c2a1;
+            x = s1 / s2
+            y = s3 / s2
+            document.getElementById("x").value = x
+            document.getElementById("y").value = y
+
+
+        }
+    </script>
+    <style>
+        .pk {
+            color: blue;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body bgcolor='orange' id="bd">
+
+    <div class="body" style="border: solid black 2px;">
+        <div class="heading" style="background-color: black;text-align: center;color: white;position: sticky;top: 0;">
+            <h1> Linear Equation in Two variable Calculator</h1>
+        </div>
+        <div>
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;text-align: center;"> welcome users, here
+                you can calculate <br> the solution of linear equation in two variable X,Y </h2>
+        </div>
+        <br>
+        <div class="calculator">
+            <div style="text-align:center;"><strong
+                    style="font-size: 30px;color:blue;font-family: Georgia, 'Times New Roman', Times, serif;">1</strong><strong
+                    style="font-size: 20px;color: brown;font-family: Georgia, 'Times New Roman', Times, serif;">st
+                    linear equation :- </strong><br><br> <input id="a1" size=1 placeholder="a1" class="pk"><strong
+                    style="font-size: 25px;"> X
+                </strong><strong style="font-size: 28px;"> + </strong><input id="b1" size=1 placeholder="b1"
+                    class="pk"><strong style="font-size: 25px;"> Y
+                </strong><strong style="font-size: 28px;"> +
+                </strong><input id="c1" size=1 placeholder=" c1" class="pk"><strong style="font-size: 28px;"> = 0
+                </strong>
+
+            </div>
+            <br><br>
+            <div class="calculator">
+                <div style="text-align:center;"><strong
+                        style="font-size: 30px;color:blue;font-family: Georgia, 'Times New Roman', Times, serif;">2</strong><strong
+                        style="font-size: 20px;color: brown;font-family: Georgia, 'Times New Roman', Times, serif;">nd
+                        linear equation :- </strong><br><br> <input id="a2" size=1 placeholder="a2" class="pk"><strong
+                        style="font-size: 25px;"> X
+                    </strong><strong style="font-size: 28px;"> + </strong><input id="b2" size=1 placeholder="b2"
+                        class="pk"><strong style="font-size: 25px;"> Y </strong><strong style="font-size: 28px;"> +
+                    </strong><input id="c2" size=1 placeholder=" c2" class="pk"><strong style="font-size: 30px;"> = 0
+                    </strong>
+
+                </div><br>
+                <div class="button" style="display: flex;justify-content: center;align-items: center;"><input
+                        type="button" value="RESULT" size="100" onclick="result()"
+                        style="font-size: 30px;color: brown;font-family: Georgia, 'Times New Roman', Times, serif;">
+                </div><br>
+
+
+                <div class="result" style="border: solid brown 10px;margin: 10px;padding: 20px;">
+                    <h2 style="text-align: center;">Here is the answer of the given pair of linear equations</h2>
+                    <strong style="font-size: 25px;">X = </strong><input id="x" size="3" class="pk"><br><br>
+                    <strong style="font-size: 25px;">Y = </strong><input id="y" size="3" class="pk">
+                </div>
+            </div>
+            <h3 style="text-align: center;">TO FIND ANOTHER CLICK ON REFRESH </h3>
+            <div class="button"
+                style="display: flex;justify-content: center;align-items: center;font-family: Georgia, 'Times New Roman', Times, serif;">
+                <a href="file:///C:/Users/user/Desktop/sle.html"><input type="button" value="REFRESH" size="100"
+                        style="font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;color: brown;">
+            </div><br>
+
+            </a>
+            <h3 style="text-align: center;color: rgb(141, 27, 37);">ALERT <br> <br> WORK ONLY FOR LINEAR EQUATION IN THE
+                FORM AX + BY + C = 0</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+</body>
+
+</html>
